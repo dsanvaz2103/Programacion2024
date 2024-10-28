@@ -21,17 +21,29 @@ public class Ejercicio6 {
         double radio;
         double longitud;
         double area;
-        
+        int opcion;
 // Pedimos por pantalla el radio mediante un sout
         System.out.println("Introduzca el radio del circulo para calcular la longitud y el area del circulo: ");
 // Leemos el radop 
         System.out.print("Radio: ");
         radio = scan.nextDouble();
+        
+        System.out.println("Que quieres realizar: ");
+        System.out.println("Opcion 1: Calcular Longitud ");
+        System.out.println("Opcion 2: Calcular Area ");
+        opcion = scan.nextInt();
 // Creamos las operaciones y las imprimimos con el resultado por pantalla
-        longitud = 2 * Math.PI * radio;
-        System.out.println("Longitud es : " + " 2 " + " * " + " π " + " * " + radio + " = " + longitud);
-        area = Math.PI * radio * 2;
-        System.out.println("Area es : " + " π " + " * " + radio + " * " + " 2 " + " = " + area);
+        switch (opcion) {
+            case 1 -> {
+                longitud = 2 * Math.PI * radio;
+                System.out.println("Longitud es : " + " 2 " + " * " + " π " + " * " + radio + " = " + longitud);
+            }
+            case 2 -> {
+                area = Math.PI * radio * 2;
+                System.out.println("Area es : " + " π " + " * " + radio + " * " + " 2 " + " = " + area);
+            }
+            default -> System.out.println("Ninguna opcion seleccionada ");
+        }
     }
     
 }
