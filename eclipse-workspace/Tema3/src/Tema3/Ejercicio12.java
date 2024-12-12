@@ -3,27 +3,35 @@ package Tema3;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ejercicio11 {
+public class Ejercicio12 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int[] tabla = new int[5];
 		int numero;
 		int resultado;
+		
 		System.out.print("Escribe un numero que creas que este: ");
 		numeroAleatorio(tabla);
+		Arrays.sort(tabla);
 		System.out.println(Arrays.toString(tabla));
+		
 		numero = scan.nextInt();
+		//Busqueda lineal.
 		resultado = busqueda(numero , tabla);
+		
 		//Imprimir resultado
 		imprimirResultado(resultado);
-		scan.close();
 		System.out.println("La posicion es: " + resultado);
+		
 		//Invocar busqueda binaria de la clase java.utils.Arrays
 		resultado = Arrays.binarySearch(tabla,numero);
+		
 		//Imprimir resultado de nuevo y vemos si es el mismo que con la busqueda lineal
 		imprimirResultado(resultado);
 		System.out.println("La posicion es: " + resultado);
+		
+		scan.close();
 	}
 	
 	/**
@@ -49,7 +57,7 @@ public class Ejercicio11 {
 		if (resultado == -1) {
 			System.out.println("El numero seleccionado no se encuentra en el array ");
 		}else {
-			System.out.println("El numero a sido encontrado");
+			System.out.println("El numero ha sido encontrado");
 		}
 	}
 	
@@ -62,5 +70,4 @@ public class Ejercicio11 {
 			tabla[i] = (int) (Math.random()*100)+1;
 		}
 	}
-
 }
