@@ -65,7 +65,7 @@ public class EjemploString {
 		System.out.println("Hola Fran".contains("Fran"));
 		// Remplaza cadenas
 		System.out.println("asdf".replace("a", "B"));
-		System.out.println("aaaff".split("b"));
+		System.out.println("aaaff".split("a"));
 	}
 
 }
