@@ -4,15 +4,24 @@ import Tema4.Ejercicio7.Personal.Maquinista;
 
 public class Tren {
     private Locomotora locomotora;
-    private int numeroVagonetas;
+    private int numVagones;
     private Maquinista maquinista;
-    private Vagon vagon;
+    private Vagon[] vagones;
 
-    public Tren(Locomotora locomotora, int numeroVagonetas,Vagon vagon, Maquinista maquinista) {
+    public Tren(Locomotora locomotora,Vagon vagon, Maquinista maquinista) {
         this.locomotora = locomotora;
-        this.numeroVagonetas = numeroVagonetas;
-        this.vagon = vagon;
+        this.vagones = new Vagon[5];
         this.maquinista = maquinista;
+    }
+
+    public void enganchaVagon (int cargaMax, int cargaActual, String mercancia) {
+        if (numVagones >= 5) {
+            System.out.println("El tren no admite más vagones");
+        } else {
+            Vagon v = new Vagon (numVagones, cargaMax, cargaActual, mercancia);
+            vagones [numVagones] = v; //el vagón pasado ocupa el último lugar
+            numVagones++; //ahora tenemos un vagón más enganchado al tren
+        }
     }
 
     public Locomotora getLocomotora() {
@@ -23,12 +32,12 @@ public class Tren {
         this.locomotora = locomotora;
     }
 
-    public int getNumeroVagonetas() {
-        return numeroVagonetas;
+    public int getNumVagones() {
+        return numVagones;
     }
 
-    public void setNumeroVagonetas(int numeroVagonetas) {
-        this.numeroVagonetas = numeroVagonetas;
+    public void setNumVagones(int numVagones) {
+        this.numVagones = numVagones;
     }
 
     public Maquinista getMaquinista() {
@@ -39,11 +48,11 @@ public class Tren {
         this.maquinista = maquinista;
     }
 
-    public Vagon getVagon() {
-        return vagon;
+    public Vagon[] getVagones() {
+        return vagones;
     }
 
-    public void setVagon(Vagon vagon) {
-        this.vagon = vagon;
+    public void setVagones(Vagon[] vagones) {
+        this.vagones = vagones;
     }
 }

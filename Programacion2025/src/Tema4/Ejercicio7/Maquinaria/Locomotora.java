@@ -4,11 +4,11 @@ import Tema4.Ejercicio7.Personal.Mecanico;
 
 public class Locomotora {
     private String matricula;
-    private String potenciaMotor;
-    private String fechaFabricacacion;
+    private int potenciaMotor;
+    private int fechaFabricacacion;
     private Mecanico mecanico;
 
-    public Locomotora(String matricula, String potenciaMotor, String fechaFabricacacion, Mecanico mecanico) {
+    public Locomotora(String matricula, int potenciaMotor, int fechaFabricacacion, Mecanico mecanico) {
         this.matricula = matricula;
         this.potenciaMotor = potenciaMotor;
         this.fechaFabricacacion = fechaFabricacacion;
@@ -23,19 +23,19 @@ public class Locomotora {
         this.matricula = matricula;
     }
 
-    public String getPotenciaMotor() {
+    public int getPotenciaMotor() {
         return potenciaMotor;
     }
 
-    public void setPotenciaMotor(String potenciaMotor) {
+    public void setPotenciaMotor(int potenciaMotor) {
         this.potenciaMotor = potenciaMotor;
     }
 
-    public String getFechaFabricacacion() {
+    public int getFechaFabricacacion() {
         return fechaFabricacacion;
     }
 
-    public void setFechaFabricacacion(String fechaFabricacacion) {
+    public void setFechaFabricacacion(int fechaFabricacacion) {
         this.fechaFabricacacion = fechaFabricacacion;
     }
 

@@ -2,11 +2,11 @@ package Tema4.Ejercicio7.Maquinaria;
 
 public class Vagon {
     private int id;
-    private String cargaMaximaKilos;
-    private String cargaActualKilos;
+    private int cargaMaximaKilos;
+    private int cargaActualKilos;
     private String tipoMercancia;
 
-    public Vagon(int id, String cargaMaximaKilos, String cargaActualKilos, String tipoMercancia) {
+    public Vagon(int id, int cargaMaximaKilos, int cargaActualKilos, String tipoMercancia) {
         this.id = id;
         this.cargaMaximaKilos = cargaMaximaKilos;
         this.cargaActualKilos = cargaActualKilos;
@@ -21,19 +21,19 @@ public class Vagon {
         this.id = id;
     }
 
-    public String getCargaMaximaKilos() {
+    public int getCargaMaximaKilos() {
         return cargaMaximaKilos;
     }
 
-    public void setCargaMaximaKilos(String cargaMaximaKilos) {
+    public void setCargaMaximaKilos(int cargaMaximaKilos) {
         this.cargaMaximaKilos = cargaMaximaKilos;
     }
 
-    public String getCargaActualKilos() {
+    public int getCargaActualKilos() {
         return cargaActualKilos;
     }
 
-    public void setCargaActualKilos(String cargaActualKilos) {
+    public void setCargaActualKilos(int cargaActualKilos) {
         this.cargaActualKilos = cargaActualKilos;
     }
 
