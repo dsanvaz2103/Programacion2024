@@ -21,7 +21,19 @@ public class Persona {
         this.edad = edad;
         this.estatura = estatura;
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        else{
+            Persona p = (Persona) obj;
+            return this.nombre.equals(p.nombre)
+                    && this.edad == p.edad
+                    && this.estatura == p.estatura
+                    && this.sexo.equals(p.sexo);
+        }
+    }
     @Override
     public String toString() {
         return "Persona{" +

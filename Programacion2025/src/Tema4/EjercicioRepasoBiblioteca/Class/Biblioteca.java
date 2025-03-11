@@ -28,7 +28,7 @@ public class Biblioteca{
         }
     }
 
-    public void prestarLibro(String titulo) {
+    public void  prestarLibro(String titulo) {
         boolean encontrado = false;
         for (int i = 0; i < cantidadLibros && !encontrado; i++) {
             if (libros[i].getTitulo().equals(titulo)) {
@@ -45,4 +45,5 @@ public class Biblioteca{
             System.out.println("No se encontró el libro con título: " + titulo);
         }
     }
+
 }
