@@ -17,9 +17,9 @@ public class Main {
 
         // Comparar libros con mismo ISBN
         System.out.println("\nComparación de libros:");
-        System.out.println("¿libro1.equals(libro2)? " + libro1.equals(libro2)); // Debería ser true
+        System.out.println("¿libro1 es igual a libro2)? " + libro1.equals(libro2)); // Debería ser true
 
         // Comparar libros con ISBN diferentes
-        System.out.println("¿libro1.equals(libro3)? " + libro1.equals(libro3)); // Debería ser false
+        System.out.println("¿libro1 es igual a libro3? " + libro1.equals(libro3)); // Debería ser false
     }
 }

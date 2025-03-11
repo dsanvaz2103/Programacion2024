@@ -18,7 +18,7 @@ public class Libro {
     @Override
     public String toString() {
         return String.format(
-                "Título: %s, Autor: %s, ISBN: %s, Año: %d",
+                "Título: %s, Autor: %s, ISBN: %s, Año: %s",
                 titulo, autor, isbn, anioPublicacion
         );
     }
@@ -27,8 +27,9 @@ public class Libro {
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (!(obj instanceof Libro)) return false;
-
+        if (!(obj instanceof Libro)){
+            return false;
+        }
         Libro otroLibro = (Libro) obj;
         return isbn.equals(otroLibro.isbn);
     }
