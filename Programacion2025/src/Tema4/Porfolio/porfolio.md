@@ -160,4 +160,33 @@ términos de contenido, no solo si son el mismo objeto en
 memoria.A diferencia del "==" se utiliza para comparar objetos y el "==" 
 para variables primitivas y comparar mediante referencias.
 
+## Buenas prácticas al sobrescribir equals()
 
+
+1. Consistencia con hashCode(): Siempre que sobrescribas
+   equals(), también sobrescribe hashCode() para garantizar un
+   comportamiento consistente.
+2. Null Safety: Asegúrate de manejar valores nulos para evitar
+   excepciones.
+3. Simetría: Si x.equals(y) es true, entonces y.equals(x)
+   también debe serlo.
+4. Transitividad: Si x.equals(y) y y.equals(z) son true, entonces
+   x.equals(z) también debe serlo.
+
+## getClass():
+
+Devuelve el tipo del objeto en tiempo de ejecución
+
+Persona persona = new Persona();
+
+Object personaObjeto = new Persona();
+
+persona.getClass().getName() -> Persona
+
+personaObjeto.getClass().getName() -> Persona
+
+System.out.println(personaObjeto instanceof Persona);
+
+System.out.println(personaObjeto instanceof Object);
+
+## Métodos abstractos:
