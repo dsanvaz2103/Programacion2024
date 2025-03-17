@@ -9,11 +9,16 @@ public class Pez extends Animal16 implements Nadador {
 
     @Override
     public void hacerSonido() {
-
+        System.out.println("Respiran por las branquias");
     }
 
     @Override
     public String moverse() {
-        return "";
+        return " nadanado";
+    }
+
+    @Override
+    public void nadar() {
+        System.out.println("Nadando...");
     }
 }

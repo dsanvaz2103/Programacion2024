@@ -1,5 +1,6 @@
 package Tema4.Ejercicio16.Animal16;
 import Tema4.Ejercicio16.Interface.Corredor;
+
 public class Perro extends Animal16 implements Corredor {
     String ladrar = "Guau";
 
@@ -15,5 +16,10 @@ public class Perro extends Animal16 implements Corredor {
     @Override
     public String moverse() {
         return "Corre en cuatro patas";
+    }
+
+    @Override
+    public void correr() {
+        System.out.println("Corre mucho");
     }
 }

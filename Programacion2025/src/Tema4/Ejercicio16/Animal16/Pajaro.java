@@ -18,7 +18,8 @@ public class Pajaro extends Animal16 implements Volador{
         return "Vuela por el aire";
     }
 
-    public String volar(){
-        return piar;
+    @Override
+    public void volar(){
+        System.out.println("Vuela rapido");
     }
 }

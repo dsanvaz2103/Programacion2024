@@ -1,6 +1,8 @@
 package Tema4.Ejercicio9.TiposVehiculo;
 
-public class Vehiculo {
+import Tema4.Ejercicio17.Vehiculos.FuelType;
+
+public abstract class Vehiculo {
     private String marca;
     private String modelo;
     private int anio;
@@ -15,4 +17,5 @@ public class Vehiculo {
         System.out.println("Modelo: " + modelo);
         System.out.println("Anio: " + anio);
     }
+
 }

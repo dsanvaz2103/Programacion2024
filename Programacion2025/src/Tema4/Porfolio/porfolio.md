@@ -190,3 +190,31 @@ System.out.println(personaObjeto instanceof Persona);
 System.out.println(personaObjeto instanceof Object);
 
 ## Métodos abstractos:
+
+Son métodos pensados solamente para ser sobreescritos.
+
+Una clase abstracta es una clase que no puede ser instanciada directamente
+
+● Sirven como base para otras clases
+● Declaran el “contrato” que las subclases deben cumplir
+● Facilita el polimorfismo y la abstracción
+
+    abstract class Figura {
+    // Método abstracto
+    public abstract double calcularArea();
+
+    // Método concreto
+    public void mostrarTipo() {
+    System.out.println("Soy una figura geométrica.");
+    }
+    }
+    class Circulo extends Figura {
+    private double radio;
+
+    @Override
+    public double calcularArea() {
+    return Math.PI * radio * radio;
+    }
+    }
+
+
