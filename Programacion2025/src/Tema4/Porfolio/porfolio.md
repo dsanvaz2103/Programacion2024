@@ -217,4 +217,28 @@ Una clase abstracta es una clase que no puede ser instanciada directamente
     }
     }
 
+## Metodo equals:
+
+      @Override
+
+      public boolean equals(Object obj) {
+      
+      if (this == obj) return true; // Mismo objeto
+      
+      Vehiculos vehiculo = (Vehiculos) obj;
+      // Comparar atributos
+      
+      if (this.brand.equals(vehiculo.brand) && this.licencePlate.equals(vehiculo.licencePlate)
+      
+      && this.year == vehiculo.year && this.fuelType.equals(vehiculo.fuelType)) {
+      
+      return true;
+      
+      }
+      
+      return false;
+      
+      }
+
+
 
