@@ -7,7 +7,7 @@ import Tema4.EjerciciosRepaso.Deportes.Furbolista;
 
 public class Main {
     public static void main(String[] args) {
-        // Crear dos futbolistas
+       /* // Crear dos futbolistas
         Deportista f1 = new Furbolista("Juan", 25, "Fútbol", "Delantero" , 3);
         Deportista f2 = new Furbolista("María", 28, "Fútbol", "Defensora", 3);
 
@@ -37,5 +37,6 @@ public class Main {
     // Metodo para demostrar paso por valor
     public static void modificarEdad(int edad) {
         edad = edad + 1;  // Esto solo modifica la copia local del valor
-    }
-}
+    }*/
+    }}
+
