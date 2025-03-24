@@ -75,23 +75,21 @@ this.anio = anio;
 
 ## Clase Coche :
 
-public class Coche extends Vehiculo {
+    public class Coche extends Vehiculo {
 
-private int numPuertas;
+    private int numPuertas;
 
-    public Coche(String marca, String modelo, int anio , int numPuertas) {
-        super(marca, modelo, anio);
-        this.numPuertas = numPuertas;
+       public Coche(String marca, String modelo, int anio , int numPuertas) {
+           super(marca, modelo, anio);
+           this.numPuertas = numPuertas;
+       }
+   
+       @Override
+       public void mostrarDetalles(){
+           super.mostrarDetalles();
+           System.out.println("Numero de puertas: " + numPuertas);
+       }
     }
-
-    @Override
-    public void mostrarDetalles(){
-        super.mostrarDetalles();
-        System.out.println("Numero de puertas: " + numPuertas);
-    }
-
-
-}
 
 Utilizamos el super() para llamar y coger los atributos de la superclase.
 
@@ -101,15 +99,15 @@ Y el super se utiliza para referenciar a metodos.
 
 Se utiliza para sobre escribir el codigo y contenido.
 
-@Override
+     @Override
 
-public void mostrarDetalles(){
+     public void mostrarDetalles(){
 
-super.mostrarDetalles();
+     super.mostrarDetalles();
 
-System.out.println("Numero de puertas: " + numPuertas);
+    System.out.println("Numero de puertas: " + numPuertas);
 
-}
+    }
 
 ## Polimorfismo:
 
@@ -240,5 +238,29 @@ Una clase abstracta es una clase que no puede ser instanciada directamente
       
       }
 
+## Interface:
+
+Otra forma de lograr Abstracción
+
+● Métodos abstractos: Declarados sin
+cuerpo, deben ser implementados por las
+clases. (No se pone abstract)
+
+● Constantes: Son implícitamente public,
+static y final.
+
+● Puede ser implementada por clases
+
+● Herencia múltiple: Una clase puede
+implementar varias interfaces.
+
+● Desde Java 8: Las interfaces pueden tener
+métodos por defecto y métodos estáticos
+con implementación.
+
+● No puede ser instanciada
+
+● Sí puede ser extendida por otras
+interfaces
 
 
