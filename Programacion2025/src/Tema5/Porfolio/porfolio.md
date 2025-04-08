@@ -177,4 +177,27 @@ una referencia mientras que el LinkedHashSet conforme lo vas añadiendo se va co
 Ahora usamos la implementación en lugar de la interfaz para acceder a los métodos
 adicionales.
 
+## COMPARETO VS EQUALS
+
+● Da la capacidad a las clases que la implementan de establecer cuál es su
+orden natural
+
+● String y envoltorios las tienen ya implementadas (sobreescrita)
+
+● Tan sólo define un método: compareTo
+
+## SET: COMPARATIVA DE IMPLEMENTACIONES
+
+Todas son implementaciones de la interfaz Set, con lo que tienen en común:
+- No elementos repetidos
+Pero cada uno además añade sus características propias:
+
+|             | HashSet | LinkedHashSet | TreeSet |
+|-------------|---------|---------------|---------|
+| Duplicados  | No      | No            | No      |
+| Nulos       | No      | Si            | No      |
+| Orden       | No      | Inserción     | Natural |
+| Rendimiento | O(1)    | O(1)          | O(logn) |
+
+## COMPARADORES: INTERFAZ COMPAREBLE
 
