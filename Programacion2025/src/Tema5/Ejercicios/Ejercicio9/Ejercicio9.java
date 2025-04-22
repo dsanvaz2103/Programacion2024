@@ -15,7 +15,7 @@ public class Ejercicio9 {
         list.add("Elena");
         list.add("Francisco");
         list.add("Gaspar");
-        mostrarPersonas(list);  
+        mostrarPersonas(list);
 
         // ANIADIR USUARIO DE LA LISTA
         String persona;
