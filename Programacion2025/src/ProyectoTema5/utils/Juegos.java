@@ -1,5 +1,5 @@
 package ProyectoTema5.utils;
 
 public enum Juegos {
-    ACCION,AVENTURA,ROLL,SIMULACION
+    ACCION, AVENTURA, SIMULACION, PUZZLE, DEPORTES, ESTRATEGIA
 }

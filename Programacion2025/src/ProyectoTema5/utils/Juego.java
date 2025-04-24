@@ -8,6 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Juego implements Comparable<Juego>{
+
     String nombre;
     Juegos categoria;
     int numeroDescargas;
@@ -29,43 +30,21 @@ public class Juego implements Comparable<Juego>{
                 '}';
     }
 
+
     @Override
     public int compareTo(Juego o) {
         if (this.categoria.equals(o.categoria)) {
-            return Double.compare(this.puntuacionMedia, o.puntuacionMedia);
+            return Double.compare(this.getPuntuacionMedia(), o.getPuntuacionMedia());
         }else {
             return this.categoria.compareTo(o.categoria);
         }
-    }
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public Juegos getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(Juegos categoria) {
-        this.categoria = categoria;
-    }
-
-    public int getNumeroDescargas() {
-        return numeroDescargas;
-    }
-
-    public void setNumeroDescargas(int numeroDescargas) {
-        this.numeroDescargas = numeroDescargas;
-    }
-
     public double getPuntuacionMedia() {
         return puntuacionMedia;
-    }
-
-    public void setPuntuacionMedia(double puntuacionMedia) {
-        this.puntuacionMedia = puntuacionMedia;
     }
 }
